@@ -1,0 +1,20 @@
+//Creating an array
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//Using for-loop
+for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+    var aNumber = numbers_1[_i];
+    var ordinalEnding = void 0;
+    if (aNumber === 1) {
+        ordinalEnding = "st";
+    }
+    else if (aNumber === 2) {
+        ordinalEnding = "nd";
+    }
+    else if (aNumber === 3) {
+        ordinalEnding = "rd";
+    }
+    else {
+        ordinalEnding = "th";
+    }
+    console.log("".concat(aNumber).concat(ordinalEnding));
+}
